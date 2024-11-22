@@ -40,14 +40,14 @@
                 <h2>Home -> Inspect Our Sample Data</h2>
                 <p>Eco-friendly advanced concrete using plastic waste and quality assessment through Artificial
                     Intelligence (AI) detection</p>
-                <p>Building a Greener Future: Smart Concrete, Sustainable Solutions</p>
+                <p>Building a Greener Future: Advanced, Concrete, Sustainable Solutions</p>
                 <div class="scroll-icon">
                     <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""></a>
                 </div>
             </div>
         </div>
         <video autoplay="" loop="" muted>
-            <source src="video/Concrete Ace-loop.mp4" type="video/mp4" />
+            <source src="video/Sample Inspection Video.mp4" type="video/mp4" />
         </video>
     </div>
     <!DOCTYPE html>
@@ -61,6 +61,15 @@
 
     <div style="font-family: Arial, sans-serif;">
         <div class="container" style="width: 80%; margin: 0 auto;">
+
+            <!-- Image Section Start -->
+            <div class="image-section" style="text-align: center; margin-bottom: 20px;">
+                <h3 style="font-weight: bolder;">Concrete Structure </h3> <img src="img/Concrete.png"
+                    alt="Descriptive text about the image"
+                    style="max-width: 100%; height: auto; border: 1px solid black;">
+            </div>
+            <!-- Image Section End -->
+
 
             <!-- Design Process Start -->
             <div class="section" style="background-color: #d3e9d3; padding: 10px; margin-bottom: 20px;">
@@ -228,6 +237,11 @@
             </div>
             <!-- Materials End -->
 
+            <!-- Pie Chart Implimantation Start -->
+            <iframe src="pie.html" style="width:100%; height:500px; border:none;"></iframe>
+            <!-- Pie Chart Implimantation End-->
+
+
             <!-- Properties of Cement Start -->
             <div class="section" style="background-color: #d3e9d3; padding: 10px; margin-bottom: 20px;">
                 <h2 style="text-align: center; font-weight: bolder; font-family: 'Times New Roman', Times, serif;">
@@ -262,7 +276,7 @@
                         </td>
                         <td
                             style="border: 1px solid black; padding: 8px; text-align: left; width: 50%; vertical-align: top;">
-                            3.1 to 3.16 g/cm3
+                            3.1 to 3.16 g/cm<sup>3</sup>
                         </td>
                     </tr>
                 </table>
@@ -402,158 +416,13 @@
             <!-- Image Section End -->
         </div>
         <!-- </div> -->
-
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>HTML Pie Chart</title>
-            <style>
-                @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
-                @keyframes bake-pie {
-                    from {
-                        transform: rotate(0deg) translate3d(0, 0, 0);
-                    }
-                }
-
-                body {
-                    font-family: 'Open Sans', Arial;
-                    background: #EEE;
-                }
-
-                main {
-                    width: 400px;
-                    margin: 30px auto;
-                }
-
-                section {
-                    margin-top: 30px;
-                    display: flex;
-                    align-items: center;
-                }
-
-                .pieID {
-                    display: inline-block;
-                    vertical-align: top;
-                }
-
-                .pie {
-                    height: 200px;
-                    width: 200px;
-                    position: relative;
-                    margin: 0 30px 30px 0;
-                }
-
-                .pie::before {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    z-index: 1;
-                    width: 100px;
-                    height: 100px;
-                    background: #EEE;
-                    border-radius: 50%;
-                    top: 50px;
-                    left: 50px;
-                }
-
-                .pie::after {
-                    content: "";
-                    display: block;
-                    width: 120px;
-                    height: 2px;
-                    background: rgba(0, 0, 0, 0.1);
-                    border-radius: 50%;
-                    box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1);
-                    margin: 220px auto;
-                }
-
-                .slice {
-                    position: absolute;
-                    width: 200px;
-                    height: 200px;
-                    clip: rect(0px, 200px, 200px, 100px);
-                }
-
-                .slice span {
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background-color: black;
-                    width: 200px;
-                    height: 200px;
-                    border-radius: 50%;
-                    clip: rect(0px, 200px, 200px, 100px);
-                }
-
-                .pie:hover .slice {
-                    animation: bake-pie 1s;
-                }
-
-                .legend {
-                    list-style-type: none;
-                    padding: 0;
-                    margin: 0;
-                    background: #FFF;
-                    padding: 15px;
-                    font-size: 13px;
-                    box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB;
-                    height: auto;
-                    width: 200px;
-                }
-
-                .legend li {
-                    height: fit-content;
-                    width: fit-content;
-                    padding-left: 0.5em;
-                    border-left: 1.25em solid black;
-                }
-
-                .legend em {
-                    font-style: normal;
-                }
-
-                .legend span {
-                    float: right;
-                }
-
-                footer {
-                    position: fixed;
-                    bottom: 0;
-                    right: 0;
-                    font-size: 13px;
-                    background: #DDD;
-                    padding: 5px 10px;
-                    margin: 5px;
-                }
-            </style>
-        </head>
-        <div class="section" style="background-color: #d3e9d3; padding: 10px; margin-right: 200px; margin-left: 200px;">
-            <main>
-                <h1 style="font-weight: bolder; align-content: center;">Materials</h1>
-                <p style="align-content: center; font-size: large;">Total Volume Fraction = 100% <br> The total given
-                    values
-                    are below.</p>
-                <section>
-                    <div class="pieID pie"></div>
-                    <ul class="pieID legend">
-                        <li style="border-color: rgb(90, 69, 69);"><em>Cement = </em><span>16.67</span></li>
-                        <li style="border-color: rgb(161, 102, 47);"><em>Wood flour = </em><span>3.33</span></li>
-                        <li style="border-color: orange;"><em>Fine aggregate = </em><span>30</span></li>
-                        <li style="border-color: rgb(77, 255, 71);"><em>Coarse aggregate = </em><span>45</span></li>
-                        <li style="border-color: crimson;"><em>PET = </em><span>5</span></li>
-                    </ul>
-                </section>
-            </main>
-        </div>
         <div style="height:100px;"></div>
     </div>
 
     <footer>
         <div class="container-fluid">
             <div class="col-md-12">
-                <p style="color: black;">Copyright &copy; are reserve (2024) || Concrete Ace</p>
+                <p>Copyright &copy; are reserve (2024) || Concrete Ace</p>
             </div>
         </div>
     </footer>
@@ -632,10 +501,10 @@
                             <a href="about.html">About Us</a>
                         </li>
                         <li>
-                            <a href="blog.html">User For Necessary</a>
+                            <a href="Project Description.html">Project Description</a>
                         </li>
                         <li>
-                            <a href="single-post.html">Other</a>
+                            <a href="single-post.html">Single Post</a>
                         </li>
                     </ul>
                     <p>Building a Greener Future: Smart Concrete, Sustainable Solutions</p>
