@@ -104,6 +104,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 col-sm-12" style="display: flex; justify-content: center; padding: 10px;">
+                    <div class="service-item" style="width: 100%; max-width: 350px;">
+                        <div class="icon" style="width: 100%; display: flex; justify-content: center;">
+                            <img src="img/Sandip.JPG" alt="" style="width: auto; height: auto;">
+                        </div>
+                        <div class="text" style="text-align: center;">
+                            <h4>Sandip Chakraborty</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <h2 style="text-align: center;">Scroll Down For Details View</h2>
         </div>
@@ -275,6 +286,62 @@
                         <br>Contact Info - +880 1610-649689
                         <br> My name is Shourov Das, and I am a student in the Textile Engineering Department at
                         Daffodil International University. I am passionate about sustainable and eco-friendly
+                        innovations. <br> I believe in the importance of creating environmentally responsible solutions
+                        to address global challenges. My areas of interest include green processing techniques, waste
+                        reduction, and developing reusable products. I am committed to contributing to a more
+                        sustainable future through my education and research.
+                    </p>
+                    <div class="simple-btn">
+                        <a href="Load Page.html">continue reading</a>
+                    </div>
+                </div>
+
+                <div id="overlay"
+                    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: none; align-items: center; justify-content: center;z-index: 9999;"
+                    onclick="closeImage()">
+                    <div onclick="event.stopPropagation()"
+                        style="position: relative; width: 50%; background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <img id="overlay-img" src="" alt="Image" style="width: 50%;">
+                        <button onclick="closeImage()"
+                            style="position: absolute; top: 10px; right: 10px; background: red; color: white; border: none; padding: 5px 10px; cursor: pointer;">X</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add this script at the end of your HTML -->
+            <script>
+                function showImage(src) {
+                    document.getElementById('overlay-img').src = src;
+                    document.getElementById('overlay').style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                }
+                function closeImage() {
+                    document.getElementById('overlay').style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            </script>
+
+            <!-- Sandip Chakraborty -->
+
+            <!-- <h1 style="text-align: center;">Student Details</h1> -->
+            <div class="blog-post" style="display: flex; align-items: flex-start; position: relative;">
+                <img src="img/Sandip.JPG" alt="" style="margin-right: 20px; cursor: pointer;"
+                    onclick="showImage(this.src);">
+                <div class="text-content">
+                    <h2><a href="">Sandip Chakraborty</a></h2>
+                    <span>
+                        <a href="#" target="_blank">Student</a> /
+                        <a href="https://www.lus.ac.bd/faculty-of-cse/"
+                            target="_blank">Department of Computer Science & Engineering</a> /
+                        <a href="https://www.lus.ac.bd/" target="_blank">Leading University</a>
+                    </span>
+                    <p>
+                        <a href="https://www.linkedin.com/in/sandipcb365/" target="_blank">LinkedIn
+                            Profile</a>
+                        <br>Email : chakrabortysandip872@gmail.com
+                        <br>Contact Info - +880 1720-264931
+                        <br> My name is Sandip Chakraborty, and I am a student in the Computer Science & Engineering at
+                        Leading University. I am passionate about sustainable and eco-friendly
                         innovations. <br> I believe in the importance of creating environmentally responsible solutions
                         to address global challenges. My areas of interest include green processing techniques, waste
                         reduction, and developing reusable products. I am committed to contributing to a more
